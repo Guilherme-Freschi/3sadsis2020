@@ -1,0 +1,34 @@
+package aula20200323.cofre;
+
+public class CofreSeguro {
+
+	private String senha;
+	private boolean abrir;
+
+	public CofreSeguro(String senha) {
+		this.senha = senha;
+		this.abrir = false;
+	}
+
+	public void abrir(String senha) {
+		if (this.senha.equals(senha)) {
+			this.abrir = true;
+			return;
+		}
+
+		System.out.println("Senha não correta");
+	}
+
+	public void fechar() {
+		this.abrir = false;
+
+	}
+
+	public boolean isAberto() {
+		return abrir;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+}
