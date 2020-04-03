@@ -217,9 +217,15 @@ class TesteComCarro {
 		golKLK0978.abastecer(9);
 		assertEquals(30,golKLK0978.getgasolinaTanqueLitros());
 		
+	@Test
+	void esvaziarTanqueDeCombustivel() {
+		Carro fuscaUTA6787 = new Carro(15);
+		
+		fuscaUTA6787.setEsvaziarCombustivelNoTanque();
+		
+		assertEquals(0),fuscaUTA6787 .getgasolinaTanqueLitros());
+		
 		
 	}
-	
-	
 }
 
