@@ -1,33 +1,51 @@
-package aula20200406;
+package aula20200406.tiposDeMetodos;
 
-public class AppTiposDeMetodos {
-	public static void main(String[] args) {
-		Pessoa maria = new Pessoa();
-		maria.setNome("Mariana");
-		maria.setAltura(1.70);
-		maria.setIdadeEmAnos(30);
-		maria.setPeso(62);
-		
-		//DIA
-		//> Declaracao, Instanciacao, Atribuicao <
-		
-		Pessoa joao = new Pessoa();
-		
-		joao.setNome("Jose");
-		joao.setAltura(1.82);
-		joao.setIdadeEmAnos(53);
-		joao.setPeso(90);
-		
-		Pessoa igor = new Pessoa();
-		
-		igor.setNome("Igor Elias");
-		igor.setIdadeEmAnos(20);
-		igor.setAltura(1.70);
-		igor.setPeso(90);
-		
-		System.out.println(maria.getNome() + ", IMC =" + maria.getIMC());
-		System.out.println(joao.getNome() + ", IMC = " + joao.getIMC());
-		System.out.println(igor.getNome() + ", IMC =" + igor.getIMC());
+public class Pessoa {
+	private String nome;
+	private int idade;
+	private double peso;
+	private double altura;
+
+	
+	public double getIMC() {
+		return peso / (altura * altura);
+	}
+	
+	// Olha um getter aqui!
+	public String getNome() {
+		return this.nome;
+	}
+
+	// Olha um setter aqui!
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getAltura() {
+		return this.altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public int getIdade() {
+		return this.idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+	public double getPeso() {
+		return this.peso;
+	}
+
+	public void setPeso(double peso) {
+		if (peso <= 0) {
+			throw new RuntimeException("Peso deve ser maior que zero!");
+		}
+		this.peso = peso;
 	}
 
 }
