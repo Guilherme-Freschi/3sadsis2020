@@ -21,9 +21,16 @@ public class AppTiposDeMetodos {
 		jose.setPeso(-92);
 		jose.setIdade(32);
 		
+		Pessoa guilherme = new Pessoa();
+		guilherme.SetNome("Guilherme de Ciesco Freschi");
+		guilherme.SetAltura(1.75);
+		guilherme.SetPeso(65);
+		guilherme.SetIdade(18);
+		
 		
 		System.out.println(maria.getNome() + ", IMC=" + maria.getIMC());
 		System.out.println(jose.getNome() + ", IMC=" + jose.getIMC());
+		System.out.println(guilherme.getNome() +", IMC" +guilherme.getIMC());
 		
 	}
 
