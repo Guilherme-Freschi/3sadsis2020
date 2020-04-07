@@ -10,13 +10,12 @@ public class Pessoa {
 		return peso/(altura*altura);
 	}
 	
-	
-	// Getter
+	// Olha um getter aqui!
 	public String getNome() {
 		return this.nome;
 	}
 	
-	// Setter
+	// Olha um setter aqui
 	public void setNome(String nome) {
 		if (nome.length() == 0 || nome.trim().length() <= 1 ){
 			throw new RuntimeException("Nome invalido!");
