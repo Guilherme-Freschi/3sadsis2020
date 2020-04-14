@@ -1,8 +1,8 @@
 package aula20200413;
 
 public class gato {
-	private final static int porteGrande = 10;
-	private final static int portePequeno = 5;
+	private static int porteGrande = 10;
+	private static int portePequeno = 5;
 	private String nome;
         private int vacinacao;
 	private String raca;
