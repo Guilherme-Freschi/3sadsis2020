@@ -1,59 +1,86 @@
-package Dia_13_04_2020;
+package aula20200413.exercicio;
 
-import java.util.Calendar;
+public class tipoMoto {
+  private String modelo;
+  private int ano;
+  private double placa;
+  private double vida=100;
+  private double ataque=10;
+  private double defesa=10;
+  private double inteligencia=10;
+  private Classe classe;
 
-public class Exemplo {
-	private String nome;
-	private int anoDeNascimento;
-	private boolean graduacao;
+  // 2.1 Um construtor padrão;
+  public Personagem(){
+    this.nome = null;
+    setStatus(Classe.GUERREIRO);
+  }
+  // 2.2 Um construtor alternativo;
+  public Personagem(String nome, Classe classe){
+    this.setStatus(classe);
+    this.nome=nome;
+  }
 
-	// 2.1 Um construtor padrão;
-	public Exemplo() {
-		nome = null;
-		anoDeNascimento = 321;
-		graduacao = false;
-	}
+  // 2.3 Método modificador;
+  private void setStatus(Classe classe){
+    if (classe == Classe.GUERREIRO){
+      this.defesa += 5;
+      this.ataque += 5;
+    }else if (classe ==  Classe.MAGO){
+      this.defesa += 5;
+      this.inteligencia +=5;
+    }else if(classe ==  Classe.ARQUEIRO){
+      this.ataque +=5;
+      this.inteligencia+=5;
+    }
+  }
+  // 2.3 Um método modificador;
+  public void levelUp(){
+    this.level += 1;
+    this.xp = 0;
+    this.vida = 10;
+    this.ataque += 2;
+    this.defesa += 2;
+    this.inteligencia += 2;
+  }
 
-	// 2.2 Um construtor alternativo;
-	public Exemplo(String nome, int anoDeNascimento) {
-		setNome(nome);
-		setAnoDeNascimento(anoDeNascimento);
+  public void verificarLevel(){
+    if(this.xp == 100){
+      this.levelUp();
+    }
+  }
+  // 2.4 Um método de acesso cujo retorno seja o valor de um atributo;
+  public boolean isVivo(){
+    if(getVida() > 0 ){
+      return true;
+    }else{
+      return false;
+    }
+  }
+  // 2.4 Um método de acesso cujo retorno seja o valor de um atributo;
+  public double getVida(){
+    return this.vida;
+  }
 
-	}
+  // 2.3 Um método modificador;
+  public double dormir(){
+    this.vida = 100;
+    return this.vida;
+  }
 
-	public String getNome() {
-		return nome;
-	}
+  // 2.6 Um método encapsulado que seja usado pelo método de acesso do item 2.5.
+  private double metodoLoucoParaCalcularBatalhas(){
+    this.vida += (this.defesa/this.inteligencia - this.ataque)*2;
+    this.xp += 20;
+    this.verificarLevel();
+    return this.vida;
+  }
 
-	public int getAnoDeNascimento() {
-		return anoDeNascimento;
-	}
-
-	// 2.4 Um método de acesso cujo retorno seja o valor de um atributo;
-	public boolean isGraduado() {
-		return graduacao;
-	}
-
-	// 2.3 Um método modificador;
-	public void setAnoDeNascimento(int anoDeNascimento) {
-		if (Calendar.getInstance().get(Calendar.YEAR) - anoDeNascimento < 17) {
-			throw new RuntimeException("A idade deve ser maior que 17");
-		} else
-			this.anoDeNascimento = anoDeNascimento;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	// 2.5 Um método de acesso cujo retorno NÂO seja o valor de um atributo, mas sim
+  // 2.5 Um método de acesso cujo retorno NÂO seja o valor de um atributo, mas sim
 	// um valor CALCULADO em função de um valor de atributo.;
-	public int getIdade() {
-		return calcularIdade();
-	}
-
-	// 2.6 Um método encapsulado que seja usado pelo método de acesso do item 2.5.
-	private int calcularIdade() {
-		return Calendar.getInstance().get(Calendar.YEAR) - anoDeNascimento;
-	}
+  public void atacarMonstro(){
+    if(this.isVivo()){
+      this.vida = this.metodoLoucoParaCalcularBatalhas();
+    }
+  }
 }
