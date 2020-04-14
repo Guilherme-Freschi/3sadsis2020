@@ -1,8 +1,8 @@
 package aula20200413;
 
 public class gato {
-	private final static int GRANDE = 10;
-	private final static int PEQUENO = 5;
+	private final static int porteGrande = 10;
+	private final static int portePequeno = 5;
 	private String nome;
   private String vacinacao;
 	private String raca;
@@ -60,9 +60,9 @@ public class gato {
 	}
 	private int Pesogato() {
 		if(peso>10) {
-			return GRANDE;
+			return porteGrande;
 		}
-		return PEQUENO;
+		return portePequeno;
 	}
 
 }
