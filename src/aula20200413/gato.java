@@ -1,8 +1,6 @@
 package aula20200413;
 
-public class gato {
-	private static int porteGrande = 10;
-	private static int portePequeno = 5;
+public class animal {
 	private String nome;
         private int vacinacao;
 	private String raca;
@@ -11,7 +9,7 @@ public class gato {
     
 
 	
-	public gato(String nome, String raca, int idade,double peso) {
+	public animal(String nome, String raca, int idade,double peso) {
 		this.nome = nome;
                 this.vacinacao = vacinacao;
 		this.raca = raca;
@@ -19,7 +17,7 @@ public class gato {
 		this.peso = peso;
 	}
 
-	public gato(String nome, String raca, int idade,double peso) {
+	public animal(String nome, String raca, int idade,double peso) {
 		this.nome = nome;
                 this.vacinacao = vacinacao;
 		this.raca = raca;
@@ -36,9 +34,7 @@ public class gato {
 	public void inserirRaca(String raca) {
 		this.raca = raca;
 	}
-	public double getPeso() {
-		return this.peso;
-	}
+
 	public String getNome() {
 		return this.nome;
 	}
@@ -57,12 +53,6 @@ public class gato {
 			throw new RuntimeException("Por favor informe a Idade");
 		}
 		return this.idade*pegarPesogato();
-	}
-	private int Pesogato() {
-		if(peso>10) {
-			return porteGrande;
-		}
-		return portePequeno;
 	}
 
 }
