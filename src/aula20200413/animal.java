@@ -2,45 +2,62 @@ package aula20200413;
 
 public class animal {
 	private String nome;
-        private int vacinacao;
+	private int vacinacao;
 	private String raca;
 	private int idade;
 	private double peso;
-    
-
 	
-	public animal(String nome, String raca, int idade,double peso) {
-		this.nome = nome;
-                this.vacinacao = vacinacao;
-		this.raca = raca;
-		this.idade = idade;
-		this.peso = peso;
+	// 2.1 Um construtor padrão;
+	public animal() {
+		System.out.println("animal");
+	}
+	
+	// 2.2 Um construtor alternativo;
+	public animal(String nome, int vacinacao, String raca, int idade, double peso) {
+		setNome(nome);
+		setVacinacao(vacinacao);
+		setRaca(raca);
+		setIdade(idade);
+		setPeso(peso);
+	}
+	
+	// 2.3 Um método modificador;
+	public void setIdade(int idade) {
+		if (nota < 0) {
+			throw new RuntimeException("Idade deve ser Maior que 0");
+		}
+		this.nota = nota;
+
+	}
+	
+	
+	// 2.5 Um método de acesso cujo retorno NÂO seja o valor de um atributo, mas sim
+	// um valor CALCULADO em função de um valor de atributo.;
+	public int getAnoDeLançamento() {
+		return calculandoAnoDeLançamento();
 	}
 
-	public animal(String nome, String raca, int idade,double peso) {
-		this.nome = nome;
-                this.vacinacao = vacinacao;
-		this.raca = raca;
-		this.idade = idade;
-		this.peso = peso;
+	public int getTemporadas() {
+		return temporadas;
 	}
 
-	public void inserirNome(String nome) {
-		this.nome = nome;
-	}
-        public void inserirDataVacinacao{
-          this.vacinacao - vacinacao;
-        }      
-	public void inserirRaca(String raca) {
-		this.raca = raca;
+	public int getNota() {
+		return calcularNota();
 	}
 
-	public String getNome() {
-		return this.nome;
+
+	public int calculandoAnoDeLançamento() {
+		return 2020 - anoDeLançamento;
 	}
-	public String getRaca() {
-		return this.raca;
+
+
+	public int calcularNota() {
+		return 100 - nota;
 	}
+}
+
+
+   
   
 	private int calcularDataVacinacao() {
           if(this.vacinacao <= 2020) {
@@ -56,3 +73,35 @@ public class animal {
 	}
 
 }
+
+
+
+	public String toString() {
+		return "animal [" + "nome:" + getNome() + ",nota:" + getNota() + " ,temporadas=" + getTemporadas()
+				+ ",Serie lançanda a " + getAnoDeLançamento() + " anos]";
+	}
+
+	
+
+	
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setAnoDeLançamento(int anoDeLançamento) {
+		this.anoDeLançamento = anoDeLançamento;
+	}
+
+	public void setTemporadas(int temporadas) {
+		this.temporadas = temporadas;
+	}
+
+	
+
+
+	public String getNome() {
+		return nome;
+	}
+
+	
