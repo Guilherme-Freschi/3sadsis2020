@@ -37,13 +37,7 @@ public class animal {
             throw new RuntimeException("Vacinação vencida ou inválida ");
            }
 	  return calcularDataVacinacao();
-	}
-	private int calcularIdadegato() {
-	  if (this.idade <= 0) {
-	    throw new RuntimeException("Por favor informe a Idade");
-	  }
-	  return this.idade*pegarPesogato();
-	}   
+	} 
 	
 }
 
