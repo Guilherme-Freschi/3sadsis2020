@@ -1,8 +1,8 @@
 package aula20200413;
 
-public class AppGato {
+public class AppAnimal {
 	public static void main(String[] args) {
-		Gato = new gato;
+		animal = new animal;
 		
 		gato.setNome(nome);
 		gato.setVacinacao(vacinacao);
