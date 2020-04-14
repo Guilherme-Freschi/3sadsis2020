@@ -4,7 +4,7 @@ public class gato {
 	private final static int porteGrande = 10;
 	private final static int portePequeno = 5;
 	private String nome;
-  private String vacinacao;
+        private int vacinacao;
 	private String raca;
 	private int idade;
 	private double peso;
@@ -13,7 +13,7 @@ public class gato {
 	
 	public gato(String nome, String raca, int idade,double peso) {
 		this.nome = nome;
-    this.vacinacao = vacinacao;
+                this.vacinacao = vacinacao;
 		this.raca = raca;
 		this.idade = idade;
 		this.peso = peso;
@@ -21,7 +21,7 @@ public class gato {
 
 	public gato(String nome, String raca, int idade,double peso) {
 		this.nome = nome;
-    this.vacinacao = vacinacao;
+                this.vacinacao = vacinacao;
 		this.raca = raca;
 		this.idade = idade;
 		this.peso = peso;
@@ -30,9 +30,9 @@ public class gato {
 	public void inserirNome(String nome) {
 		this.nome = nome;
 	}
-  public void inserirDataVacinacao{
-    this.vacinacao - vacinacao;
-  }
+        public void inserirDataVacinacao{
+          this.vacinacao - vacinacao;
+        }      
 	public void inserirRaca(String raca) {
 		this.raca = raca;
 	}
@@ -47,11 +47,11 @@ public class gato {
 	}
   
 	private int calcularDataVacinacao() {
-  if(this.vacinacao <= 2020) {
-    throw new RuntimeException("Vacinação vencida ou inválida ");
-  }
+          if(this.vacinacao <= 2020) {
+            throw new RuntimeException("Vacinação vencida ou inválida ");
+           }
   
-  }
+       }   
 	private int calcularIdadegato() {
 		if (this.idade <= 0) {
 			throw new RuntimeException("Por favor informe a Idade");
