@@ -29,8 +29,9 @@ public class animal {
 	}
 	
 	
-	// 2.5 Um método de acesso cujo retorno NÂO seja o valor de um atributo, mas sim
-	// um valor CALCULADO em função de um valor de atributo.;
+	// 2.4 e 2.5
+	//Um método de acesso cujo retorno NÂO seja o valor de um atributo, mas sim 
+	//um valor CALCULADO em função de um valor de atributo.;
 	private int calcularDataVacinacao() {
 	  if(this.vacinacao <= 2020) {
             throw new RuntimeException("Vacinação vencida ou inválida ");
