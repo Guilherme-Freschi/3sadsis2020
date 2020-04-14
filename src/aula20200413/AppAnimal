@@ -2,14 +2,14 @@ package aula20200413;
 
 public class AppAnimal {
 	public static void main(String[] args) {
-		animal = new animal;
-		
-		gato.setNome(nome);
-		gato.setVacinacao(vacinacao);
-		gato.setRaca(raca);
-		gato.setPeso(peso);
-		gato.setIdade(idade);
-		
+		animal gato = new animal("Mila", 2020, "Vira-Lata", 8);
+		animal cachorro = new animal();
+		cachorro.setNome("Laika");
+		cachorro.setVacinacao(2020);
+		cachorro.setRaca("Vira-Lata");
+		cachorro.setIdade(10);
+
+		System.out.println(gato);
+		System.out.println(cachorro);
 	}
 }
-
