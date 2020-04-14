@@ -21,10 +21,10 @@ public class animal {
 	
 	// 2.3 Um método modificador;
 	public void setIdade(int idade) {
-		if (nota < 0) {
+		if (idade < 0) {
 			throw new RuntimeException("Idade deve ser Maior que 0");
 		}
-		this.nota = nota;
+		this.idade = idade;
 
 	}
 	
