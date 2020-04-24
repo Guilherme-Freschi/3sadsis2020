@@ -1,0 +1,46 @@
+1. Explicar o conceito de encapsulamento (métodos e atributos), destacando seu propósito.
+
+O conceito de encapsulamento consiste em dividir em partes, deixando assim o sistema mais flexível e o tornando mais fácil de modificar, dar manutenção e de criar novas implementações. O encapsulamento tem como objetivo controlar o acesso aos métodos e atributos da classe, essa é uma forma eficiente de limitar a manipulação e proteger os dados da classe.
+Exemplo:
+public class pessoa {
+    private String nome;
+    private String sobrenome
+    private String cpf;
+
+public void setNome(String nome) {
+	this.nome = nome;
+	}
+public void setSobrenome(String sobrenome) {
+	this.sobrenome = sobrenome;
+	}
+
+}
+
+
+2. Explicar como o uso do encapsulamento em conjunto com métodos modificadores (como os setters) podem promover o reuso de código.
+
+
+O encapsulamento junto a métodos (setters e getters) tem como propósito de organizar dados relacionados, agrupando eles em classes, assim reduzindo a duplicidade de nomes, variáveis, métodos e no código, deixando assim o programa mais legível e de fácil entendimento.
+
+public class pessoa {
+    private String nome;
+    private String cpf;
+
+    public pessoa(String pNome, String pCpf){
+        this.nome = pNome;
+        this.cpf = pCpf;
+    }
+    public String getNome(){
+        return nome;
+    }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    public  String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+}
