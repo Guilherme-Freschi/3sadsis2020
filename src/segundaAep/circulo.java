@@ -34,11 +34,7 @@ public class circulo {
             return false;
         }
     }
-
-    //metodo calcular circunferencia
-    public double circunferencia() {
-        return 2 * Math.PI * raio;           //Match.PI retorna valor de PI
-    }
+    
     public void exibeDados(){
         System.out.println("============================================\n");
         System.out.println("Raio é: " + getRaio());
