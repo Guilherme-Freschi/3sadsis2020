@@ -1,0 +1,7 @@
+Livro Java como programar 10 edição dos autores Paul Deitel e Harvey Deitel
+
+https://www.devmedia.com.br/conceitos-encapsulamento-programacao-orientada-a-objetos/18702
+
+https://www.alura.com.br/artigos/o-que-e-encapsulamento
+
+https://www.caelum.com.br/apostila-java-orientacao-objetos/modificadores-de-acesso-e-atributos-de-classe/#getters-e-setters
