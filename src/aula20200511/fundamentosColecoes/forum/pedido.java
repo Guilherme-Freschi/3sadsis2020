@@ -1,4 +1,4 @@
-package aula20200511.fundamentosColecoes.atividade;
+package fundamentosColecoes;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,6 @@ public class Pedido {
 	private ArrayList<ItemPedido> itensPedido = new ArrayList<ItemPedido>();
 	
 	public Pedido(int numero) {
-		//super();
 		this.numero = numero;
 	}
 
