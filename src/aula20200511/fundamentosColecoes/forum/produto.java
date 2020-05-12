@@ -1,14 +1,13 @@
-package aula20200511.fundamentosColecoes.atividade;
+package fundamentosColecoes;
 
 public class Produto {
-	private String nome;
+	private String produtoNome;
 	
-	public Produto(String nome) {
-		super();
-		this.nome = nome;
+	public Produto(String produtoNome) {
+		this.produtoNome = produtoNome;
 	}
 
-	public String getNome() {
-		return nome;
+	public String getProdutoNome() {
+		return produtoNome;
 	}
 }
