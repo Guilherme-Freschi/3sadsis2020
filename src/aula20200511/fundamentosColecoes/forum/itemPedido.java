@@ -6,7 +6,7 @@ public class ItemPedido {
 	private Produto produto;	
 	
 	public ItemPedido(Produto produto, double quantidade, double preco) {
-		//super();
+		
 		this.quantidade = quantidade;
 		this.preco = preco;
 		this.produto = produto;
