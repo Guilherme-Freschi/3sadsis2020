@@ -1,4 +1,4 @@
-package aula20200511.fundamentosColecoes.atividade;
+package fundamentosColecoes;
 
 public class ItemPedido {
 	private double quantidade;
