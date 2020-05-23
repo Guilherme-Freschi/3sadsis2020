@@ -2,15 +2,15 @@ package aula20200522.turmas;
 
 public class AppTurma {
 	public static void main(String[] args) {
-		Aluno matheus = new Aluno("Matheus S.", "1924545-5");
-		Aluno gustavo = new Aluno("Gustavo Cesar", "5481284-4");
-		Aluno luan = new Aluno("Luan", "4544845-5");
+		Aluno leandro = new Aluno("Lenadro F.", "1958547-5");
+		Aluno gustavo = new Aluno("Gustavo Campos", "198274-4");
+		Aluno almeida = new Aluno("Almeida", "1944945-2");
 		
 		
-		Turma turma = new Turma("ADSIS2");
-		turma.adicionarAluno(luan);
-		turma.adicionarAluno(matheus);
-		turma.setLider(gustavo);
+		Turma turma = new Turma("ADSIS");
+		turma.adicionarAluno(leandro);
+		turma.adicionarAluno(gustavo);
+		turma.setLider(almeida);
 		
 		for (Aluno aluno : turma.getAlunos()) {
 			System.out.println(aluno);
