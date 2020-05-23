@@ -19,10 +19,5 @@ public class Aluno {
 		return ra;
 	}
 
-	@Override
-	public String toString() {
-		return "Aluno [nome=" + nome + ", ra=" + ra + "]";
-	}
-	
 	
 }
