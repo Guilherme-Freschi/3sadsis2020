@@ -1,14 +1,13 @@
 package aula20200522.turmas;
-import java.util.HashSet;
 
 public class Turma {
 	private String codigo;
 	private Aluno lider;
-	private HashSet<Aluno> alunos;
+	private list<Aluno> alunos;
 	
 	public Turma(String codigo) {
 		this.codigo = codigo;
-		alunos = new HashSet<Aluno>();
+		alunos = new list<Aluno>();
 	}
 
 	public void adicionarAluno(Aluno aluno) {
@@ -19,7 +18,7 @@ public class Turma {
 		return codigo;
 	}
 	
-	public HashSet<Aluno> getAlunos() {
+	public lista<Aluno> getAlunos() {
 		return alunos;
 	}
 	
