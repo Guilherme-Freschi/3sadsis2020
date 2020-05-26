@@ -3,13 +3,13 @@ package aula20200522.turmas;
 public class Estado {
 	
 	public String nome;
+	public int codDDD;
 	public String sigla;
-	public int codigoDDD;
 	
-	public Estado(String nome, String sigla, int codigoDDD) {
+	public Estado(String nome, String sigla, int codDDD) {
 		this.nome = nome;
 		this.sigla = sigla;
-		this.codigoDDD = codigoDDD;
+		this.codDDD = codDDD;
 	}
 	
 	public String getNome() {
@@ -18,8 +18,8 @@ public class Estado {
 	public String getSigla() {
 		return sigla;
 	}
-	public int getCodigoDDD() {
-		return codigoDDD;
+	public int getCodDDD() {
+		return codDDD;
 	}	
 	
 }
