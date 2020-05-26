@@ -8,9 +8,9 @@ public class AppMain {
 
 		Pais brasil = new Pais("Brasil", 55);
 
-		brasil.addEstado(new Estado("Paraná", "PR", 44));
-		brasil.addEstado(new Estado("Mato Grosso", "MT", 66));
 		brasil.addEstado(new Estado("São Paulo", "SP", 11));
+		brasil.addEstado(new Estado("Paraná", "PR", 44));
+		brasil.addEstado(new Estado("Goiás", "GO", 61));
 
 		System.out.println("País: " + brasil.getNome());
 
@@ -21,7 +21,7 @@ public class AppMain {
 			System.out.println(item.getNome());
 		}
 		
-		System.out.println("Qtde estados: " + brasil.contarEstado());
+		System.out.println("Quantidade de estados: " + brasil.contarEstado());
 	}
 
 }
