@@ -1,24 +1,24 @@
-package aula20200522.turmas;
+package aula20200522.forum;
 
 import java.util.ArrayList;
 
 public class Pais {
 
 	public String nome;
-	public int codigoDDI;
+	public int codDdd;
 	public ArrayList<Estado> estados = new ArrayList<>();
 	
-	public Pais(String nome, int codigoDDI) {
+	public Pais(String nome, int codDdd) {
 		this.nome = nome;
-		this.codigoDDI = codigoDDI;
+		this.codDdd = codDdd;
 	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	public int getCodigoDDI() {
-		return codigoDDI;
+	public int codDdd() {
+		return codDdd;
 	}
 	
 	public void addEstado(Estado e) {
@@ -29,7 +29,7 @@ public class Pais {
 		return this.estados;
 	}
 
-	public int contarEstado() {
+	public int contEstado() {
 		return estados.size();
 	}
 }
