@@ -14,7 +14,7 @@ public class Aluno {
             this.setTurma(turma);
         } else {
 
-            System.out.println("Aluno " + getNome() + ", Já está matricula em uma turma");
+            System.out.println("Aluno " + getNome() + ", Está matriculado em uma turma");
         }
     }
 
