@@ -1,3 +1,4 @@
+package forum20200612.associacaoBidirecional;
 
 import java.util.ArrayList;
 
