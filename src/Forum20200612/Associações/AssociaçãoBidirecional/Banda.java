@@ -1,6 +1,6 @@
 package forum20200612.associacaoBidirecional;
 
-public class Banda {
+public class Membro {
 	private String nome;
-	private Membro membro;
+	private Banda banda;
 }
