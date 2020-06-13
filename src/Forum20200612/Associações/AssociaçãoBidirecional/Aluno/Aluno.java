@@ -1,3 +1,5 @@
+package forum20200612.associacaoBidirecional;
+
 public class Aluno {
 
     private String nome;
