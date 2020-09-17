@@ -1,4 +1,3 @@
-
 package aula20200908.associaçõesPersistentes;
 
 import javax.persistence.EntityManager;
