@@ -1,0 +1,1 @@
+O sistema consiste em um programa que lê dados de um cliente, verifica se ele é pessoa físicaou juridica e recebe dados de Equipamentos para a manutenção dos mesmos.
