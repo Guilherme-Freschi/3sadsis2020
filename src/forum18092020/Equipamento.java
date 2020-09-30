@@ -60,3 +60,20 @@ public class Equipamento {
         }
 
     }
+
+
+  Public void deletar(entidade identidaentidade) throus SQLException {
+      Booblean temId = !Objects.isNull (entidade.getId());
+      If(temId) {
+          PreparedStatement psDelete =     conexaoComBanco.prepareStatement(getRemocaoEntidade());
+  setRemoverParametroEntidade(psDelete , entidade.getId(), entidade);
+  try {
+       psDelete.conexaoComBanco();
+  }  catch (Exception e) {
+       e.printStackTrace();
+  }  finally {
+      psDelete.close();
+    }
+  }
+}
+
